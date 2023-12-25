@@ -42,4 +42,5 @@ https://creatronix.de/how-to-structure-your-python-project/
 
 ## TODOS
 Add a .github/workflows/template-cleanup.yml
+Migrate to Circle CI https://circleci.com/docs/migrating-from-travis/
 

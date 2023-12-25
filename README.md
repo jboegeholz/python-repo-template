@@ -1,6 +1,8 @@
 # python-repo-template
 A Blueprint for a python project
 
+[![Build Status](https://app.travis-ci.com/jboegeholz/easypattern.svg?branch=master)](https://app.travis-ci.com/jboegeholz/easypattern)
+
 ## Motivation
 Making setting up a Python project structure / repository easier
 According to

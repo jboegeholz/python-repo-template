@@ -32,7 +32,7 @@ https://creatronix.de/how-to-structure-your-python-project/
 
 ## Running Tests
 1. Open a terminal
-2. pytest
+2. pytest --cov=python_repo_template/ tests/
 
 ## Packaging
 1. Open a terminal

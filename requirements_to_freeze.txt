@@ -1,1 +1,5 @@
 pytest
+pbr
+setuptools
+wheel
+twine

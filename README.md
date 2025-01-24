@@ -21,7 +21,10 @@ https://creatronix.de/how-to-structure-your-python-project/
 
 ## Dependencies
 ### Installing 
+
+```bash
     pip install -r requirements.txt
+```
 
 ### Adding Dependencies
     pip install <dependency-name>
@@ -31,8 +34,10 @@ https://creatronix.de/how-to-structure-your-python-project/
     pip freeze > requirements.txt 
 
 ## Running Tests
-1. Open a terminal
-2. pytest --cov=python_repo_template/ tests/
+
+```bash
+    pytest --cov=python_repo_template/ tests/
+```
 
 ## Packaging
 1. Open a terminal

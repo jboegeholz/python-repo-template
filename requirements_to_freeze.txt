@@ -4,3 +4,4 @@ setuptools
 wheel
 twine
 pytest-cov
+pipdeptree

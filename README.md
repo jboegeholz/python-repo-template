@@ -23,11 +23,11 @@ https://creatronix.de/how-to-structure-your-python-project/
 ### Installing 
 
 ```bash
-    pip install -r requirements.txt
+    pip install poetry
 ```
 
 ### Adding Dependencies
-    pip install <dependency-name>
+    poetry add <package-name>
 
 ### Updating
     pip install -r requirements_to_freeze.txt --upgrade

@@ -1,7 +1,0 @@
-pytest
-pbr
-setuptools
-wheel
-twine
-pytest-cov
-pipdeptree

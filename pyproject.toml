@@ -1,9 +1,9 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
 [project]
-name = "mein_projektname"
+name = "python_repo_template"
 version = "0.1.0"
 description = "Beschreibung deines Projekts"
 readme = "README.md"

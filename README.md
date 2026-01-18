@@ -10,10 +10,8 @@ https://creatronix.de/how-to-structure-your-python-project/
 1. Use this repository via use as template
 2. Give your project a name
 3. Clone your project from your IDE oder via git CLI
-4. Delete unnecessary files 
-   1. e.g. setup.py, pyproject.toml, setup.cfg when not building a package
-   2. .travis.yml, Jenkinsfile when not using CI / CD
-5. Create a virtual environment
+4. Create a virtual environment
+5. Delete unnecessary files e.g. travis.yml, Jenkinsfile when not using CI / CD
 6. Install dependencies
 7. Run tests
 8. Start coding
@@ -25,14 +23,21 @@ https://creatronix.de/how-to-structure-your-python-project/
 ```bash
     pip install poetry
 ```
+### Poetry + PyCharm venv
+
+```bash
+    poetry env use ./venv/bin/python3
+```
 
 ### Adding Dependencies
+
     poetry add <package-name>
 
 ### Updating
-    pip install -r requirements_to_freeze.txt --upgrade
-    pip freeze > requirements.txt 
 
+```bash
+  poetry update
+```
 ## Running Tests
 
 ```bash
@@ -40,12 +45,16 @@ https://creatronix.de/how-to-structure-your-python-project/
 ```
 
 ## Packaging
-1. Open a terminal
-2. git tag -am "Version 0.1" 0.1 
-3. python setup.py sdist bdist_wheel
-4. twine upload dist/*
-
-## TODOS
-Add a .github/workflows/template-cleanup.yml
-Migrate to Circle CI https://circleci.com/docs/migrating-from-travis/
+If you want to publish your Package on pypi.org  you need to aadd your Access Token to the Poetry config first:
+```bash
+poetry config pypi-token.pypi <dein-token>
+```
+then you can build your package:
+```bash
+  poetry build
+```
+and publish it
+```bash
+poetry publish --build
+```
 

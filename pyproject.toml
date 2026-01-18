@@ -5,13 +5,13 @@ build-backend = "poetry.core.masonry.api"
 [project]
 name = "python_repo_template"
 version = "0.1.0"
-description = "Beschreibung deines Projekts"
+description = "Describe your project here"
 readme = "README.md"
 license = "MIT AND (Apache-2.0 OR BSD-2-Clause)"
 requires-python = ">=3.10"
 
 authors = [
-    { name = "Dein Name", email = "deine@email.de" }
+    { name = "your name", email = "your.name@email.de" }
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -26,7 +26,7 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
     ]
 
-dependencies = [# put your dependencies here e.g
+dependencies = [
     "requests"
 ]
 dev = [
@@ -37,7 +37,7 @@ dev = [
 
 [tool.setuptools.packages.find]
 where = ["."]
-exclude = ["venv310"]
+exclude = ["venv313"]
 
 [project.urls]
 "Homepage" = "https://github.com/jboegeholz/python-repo-template"
